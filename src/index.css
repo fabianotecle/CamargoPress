@@ -1,0 +1,10 @@
+@import url(//db.onlinewebfonts.com/c/1ffbed7089a941aa728bb970f3ad49f6?family=Futura+Md+BT);
+
+body {
+  margin: 0;
+  font-family: 'Futura Md BT', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
