@@ -6,6 +6,7 @@ import Locais from './components/Locais';
 import Entregas from './components/Entregas';
 import ProntoComecar from './components/ProntoComecar';
 import Footer from './components/Footer';
+import Whatsapp from './components/Whatsapp';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Entregas />
       <ProntoComecar />
       <Footer />
+      <Whatsapp />
     </div>
   );
 }

@@ -3,7 +3,7 @@ import Menu from "./Menu";
 
 function Header() {
   return (
-    <section id="header">
+    <section id="header" className="dark-side">
         <Menu />
     </section>
   );

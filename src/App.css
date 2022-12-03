@@ -2,10 +2,52 @@
   text-align: center;
 }
 
+.container-fluid {
+  max-width: 95%;
+  margin:0 auto;
+}
+
+.container {
+  width: 79rem;
+  max-width: 95%;
+  margin:0 auto;
+}
+
+.dark-side {
+  color:white;
+}
+
 #header {
   height: 100vh;
-  color:white;
   background: url("/assets/img/fundo.jpg") top center no-repeat;
+}
+
+#menu .container {
+  display: flex;
+  height:100px;
+  flex-flow: column wrap;
+  align-content: space-between;
+  padding-top: 2rem;
+}
+
+#menu .logo img {
+  width: 20rem;
+}
+
+#menu .menu .items {
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: 1.25rem;
+}
+
+#menu .menu .items .item {
+  padding:1.8rem 3rem 0 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#menu .menu .items .item:hover, #menu .menu .items .item.active {
+  color:#36D900;
 }
 
 #footer {
@@ -17,4 +59,82 @@
 
 #footer .empresa {
   font-size: 1.5rem;
+}
+
+#whatsapp {
+  position:fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 16rem;
+  background-color: #2EB700;
+  color: white;
+  -webkit-border-radius: 10rem;
+  -moz-border-radius: 10rem;
+  border-radius: 10rem;
+  padding:.7rem 2rem .3rem;
+  cursor:pointer;
+  transition: .3s;
+  animation: SobeDesce 2.5s linear infinite;
+}
+
+#whatsapp:hover {
+  background-color:#36D900;
+}
+
+#whatsapp .container {
+  display: flex;
+  flex-flow: wrap;
+  align-content: space-between;
+}
+
+#whatsapp .icon {
+  font-size: 2.5rem;
+}
+
+#whatsapp .phone {
+  padding-top: .34rem;
+  padding-left: .5rem;
+  font-size: 1.4rem;
+}
+
+@keyframes SobeDesce {
+  0%, 100% {
+    bottom: 2rem;
+  }
+  50% {
+    bottom: 1.7rem;
+  }
+}
+
+#quem-somos .container {
+  padding:7rem 0;
+}
+
+#quem-somos .content {
+  text-align: left;
+}
+
+#quem-somos .subtitulo {
+  color:#646464;
+  font-size: 1.5rem;
+}
+
+#quem-somos .titulo {
+  color:#2A2A2A;
+  font-size: 2.5rem;
+}
+
+#quem-somos .enfeite img {
+  width: 7rem;
+  margin: .7rem 0;
+}
+
+#quem-somos .pode-confiar {
+  color:#2A2A2A;
+  font-size: 1.5rem;
+  margin-top: .7rem;
+}
+
+#quem-somos .texto {
+  color:#646464;
 }
