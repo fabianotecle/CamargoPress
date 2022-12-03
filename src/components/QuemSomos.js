@@ -13,8 +13,8 @@ function QuemSomos() {
           </div>
           <div className="pode-confiar">Sua entrega estará em ótimas mãos!</div>
         </div>
-        <div className="cliente-feliz"></div>
-        <div className="entregador"></div>
+        <div className="cliente-feliz"><img src="/assets/img/cliente-feliz.jpg" alt="Cliente Feliz" title="Cliente Feliz" /></div>
+        <div className="entregador"><img src="/assets/img/entregador1.jpg" alt="Entregador Gentil" title="Entregador Gentil" /></div>
       </div>
     </section>
   );

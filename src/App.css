@@ -15,6 +15,11 @@
 
 .dark-side {
   color:white;
+  text-shadow: 0 3px 3px rgb(0 0 0 / 1);
+}
+
+.dark-side .enfeite img {
+  box-shadow: 0 3px 3px rgb(0 0 0 / .7);
 }
 
 #header {
@@ -108,23 +113,33 @@
 
 #quem-somos .container {
   padding:7rem 0;
+  display: flex;
+  flex-flow: wrap;
+  align-content: space-between;
 }
 
 #quem-somos .content {
   text-align: left;
+  width: 50%;
 }
 
 #quem-somos .subtitulo {
   color:#646464;
-  font-size: 1.5rem;
 }
 
 #quem-somos .titulo {
   color:#2A2A2A;
+}
+
+.subtitulo {
+  font-size: 1.5rem;
+}
+
+.titulo {
   font-size: 2.5rem;
 }
 
-#quem-somos .enfeite img {
+.enfeite img {
   width: 7rem;
   margin: .7rem 0;
 }
@@ -137,4 +152,85 @@
 
 #quem-somos .texto {
   color:#646464;
+  padding-right: 3rem;
+  line-height: 1.5;
+}
+
+#quem-somos .cliente-feliz, #quem-somos .entregador {
+  width: 25%;
+}
+
+#quem-somos .cliente-feliz img {
+  max-width: 90%;
+  margin-top: 4rem;
+}
+
+#quem-somos .entregador img {
+  max-width: 90%;
+}
+
+#locais {
+  background: url("/assets/img/fundo.jpg") top center no-repeat;
+  text-align: left;
+}
+
+#locais .container {
+  padding:7rem 0;
+  height: 36rem;
+}
+
+#locais .sul-brasil {
+  background: url("/assets/img/sul-brasil.webp") top -30rem left -16rem no-repeat;
+  background-size: 70rem;
+}
+
+#locais .rosa-dos-ventos {
+  background: url("/assets/img/rosa-dos-ventos.webp") top 12rem left 7rem no-repeat;
+  background-size: 27rem;
+}
+
+#locais .locais {
+  font-size: 2.5rem;
+}
+
+#locais .locais div {
+  margin-bottom: 2.5rem;
+}
+
+#locais .locais div.porto-alegre {
+  margin-left: 43rem;
+}
+
+#locais .locais div.grande-porto-alegre {
+  margin-left: 40rem;
+}
+
+#locais .locais div.litoral-rio-grandense {
+  margin-left: 36rem;
+}
+
+#locais .locais div.litoral-sul-catarinense {
+  margin-left: 31rem;
+}
+
+#locais .button {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+#locais .button button {
+  cursor:pointer;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
+  border: none;
+  font-size: 2.1rem;
+  padding:.5rem 4rem 1rem;
+  color:#2A2A2A;
+  transition: .3s;
+}
+
+#locais .button button:hover {
+  background-color: #36D900;
+  color: #134400;
 }
