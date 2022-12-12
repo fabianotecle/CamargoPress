@@ -8,6 +8,7 @@ function Whatsapp() {
         <div className="icon"><FaWhatsapp /></div>
         <div className="phone">(51) 99730-9818</div>
       </div>
+      <div className="balao-seta"></div>
     </section>
   );
 }

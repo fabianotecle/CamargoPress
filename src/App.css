@@ -15,16 +15,71 @@
 
 .dark-side {
   color:white;
-  text-shadow: 0 3px 3px rgb(0 0 0 / 1);
+  text-shadow: 1px 2px 7px rgb(0 0 0 / 1);
 }
 
 .dark-side .enfeite img {
-  box-shadow: 0 3px 3px rgb(0 0 0 / .7);
+  box-shadow: 1px 2px 7px rgb(0 0 0 / .5);
 }
 
 #header {
   height: 100vh;
   background: url("/assets/img/fundo.jpg") top center no-repeat;
+}
+
+#header .banner {
+  margin-top: 3.4rem;
+  height: 20rem;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: space-between;
+}
+
+#header .banner .texto {
+  width: 34rem;
+  text-align: left;
+  font-size: 3rem;
+}
+
+#header .banner .texto2, #header .banner .texto3, #header .banner .texto4 {
+  display: none;
+}
+
+#header .banner .carro {
+  width: 40rem;
+}
+
+#header .banner .carro img {
+  max-width: 100%;
+  margin-top: 1rem;
+}
+
+#header .button {
+  position: absolute;
+  bottom:5rem;
+  width: 100vh;
+  text-align: center;
+  margin:0 auto;
+  left:0;
+  right:0;
+}
+
+#header .contador {
+  display: table;
+  margin:0 auto;
+}
+
+#header .contador div {
+  display: table-cell;
+  width: 5rem;
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  transition: .3s;
+  cursor:pointer;
+}
+
+#header .contador div:hover, #header .contador div.active {
+  color:#36D900;
 }
 
 #menu .container {
@@ -60,6 +115,8 @@
   padding-top: .7rem;
   background-color: black;
   color: white;
+  position: relative;
+  z-index: 10;
 }
 
 #footer .empresa {
@@ -80,6 +137,7 @@
   cursor:pointer;
   transition: .3s;
   animation: SobeDesce 2.5s linear infinite;
+  z-index: 999;
 }
 
 #whatsapp:hover {
@@ -102,6 +160,22 @@
   font-size: 1.4rem;
 }
 
+#whatsapp .balao-seta {
+  width: 0;
+  height: 0;
+  border-left: 0px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 25px solid #2EB700;
+  position: absolute;
+  transform: rotate(110deg);
+  right: 9.6rem;
+  transition: .3s;
+}
+
+#whatsapp:hover .balao-seta {
+  border-bottom: 25px solid #36D900;
+}
+
 @keyframes SobeDesce {
   0%, 100% {
     bottom: 2rem;
@@ -111,23 +185,29 @@
   }
 }
 
-#quem-somos .container {
+#quem-somos .container, #entregas .container {
   padding:7rem 0;
+}
+
+#quem-somos .container {
   display: flex;
   flex-flow: wrap;
   align-content: space-between;
 }
 
-#quem-somos .content {
+#quem-somos .content, #entregas .content {
   text-align: left;
+}
+
+#quem-somos .content {
   width: 50%;
 }
 
-#quem-somos .subtitulo {
+#quem-somos .subtitulo, #entregas .subtitulo {
   color:#646464;
 }
 
-#quem-somos .titulo {
+#quem-somos .titulo, #entregas .titulo {
   color:#2A2A2A;
 }
 
@@ -213,12 +293,12 @@
   margin-left: 31rem;
 }
 
-#locais .button {
+#locais .button, #header .button {
   text-align: center;
   margin-top: 4rem;
 }
 
-#locais .button button {
+#locais .button button, #header .button button {
   cursor:pointer;
   -webkit-border-radius: 1rem;
   -moz-border-radius: 1rem;
@@ -230,7 +310,88 @@
   transition: .3s;
 }
 
-#locais .button button:hover {
+#locais .button button:hover, #header .button button:hover {
   background-color: #36D900;
   color: #134400;
+}
+
+#entregas .entregas {
+  display: flex;
+  height: 30rem;
+  margin-top: .7rem;
+}
+
+#entregas .tipo {
+  width: 30%;
+  background: #000;
+}
+
+#entregas .tipo div {
+  padding:1.5rem 2rem;
+  font-size: 2rem;
+}
+
+#entregas .respiro {
+  width: 1.5%;
+}
+
+#entregas .para-voce {
+  background: url(/assets/img/logo.png) bottom 1rem right 1.5rem no-repeat, url(/assets/img/para-voce.jpg) top center;
+  background-size: 10rem, 100%;
+}
+
+#entregas .para-empresas {
+  background: url(/assets/img/logo.png) bottom 1rem right 1.5rem no-repeat, url(/assets/img/para-empresas.jpg) top center;
+  background-size: 10rem, 100%;
+}
+
+#entregas .simples {
+  background: url(/assets/img/logo.png) bottom 1rem right 1.5rem no-repeat, url(/assets/img/simples.jpg) top center;
+  background-size: 10rem, 100%;
+}
+
+#pronto-comecar {
+  background: url(/assets/img/fundo-blur.jpg) center center no-repeat;
+  height: 30rem;
+  overflow: hidden;
+}
+
+#pronto-comecar .pronto-comecar {
+  position: relative;
+  z-index: 4;
+}
+
+#pronto-comecar img {
+  max-width: 100%;
+}
+
+#pronto-comecar .container {
+  padding-top:4rem;
+  font-size: 3.4rem;
+}
+
+#pronto-comecar .entregador {
+  position: absolute;
+  width: 32rem;
+  overflow: hidden;
+  height: 27rem;
+  margin-top: -1rem;
+  z-index: 3;
+}
+
+#pronto-comecar .celular {
+  position: absolute;
+  width: 30rem;
+  right: 3rem;
+  margin-top: -3rem;
+  z-index: 2;
+}
+
+#pronto-comecar .carro {
+  position: absolute;
+  width: 48rem;
+  margin: .5rem auto 0;
+  left: 25rem;
+  filter:blur(.034rem);
+  z-index: 1;
 }
