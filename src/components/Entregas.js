@@ -12,11 +12,9 @@ function Entregas() {
             <div className="tipo para-voce">
               <div className="para-quem">Para Você</div>
             </div>
-            <div className="respiro"></div>
             <div className="tipo para-empresas">
               <div className="para-quem">Para Empresas</div>
             </div>
-            <div className="respiro"></div>
             <div className="tipo simples">
               <div className="para-quem">Simples, ágil e com entrega garantida!</div>
             </div>

@@ -71,8 +71,8 @@
 
 #header .contador div {
   display: table-cell;
-  width: 5rem;
-  font-size: 1.4rem;
+  width: 4.3rem;
+  font-size: 1.25rem;
   margin-top: 2rem;
   transition: .3s;
   cursor:pointer;
@@ -84,14 +84,23 @@
 
 #menu .container {
   display: flex;
-  height:100px;
+  height: 6.25em;
   flex-flow: column wrap;
   align-content: space-between;
   padding-top: 2rem;
 }
 
+#menu .logo {
+  cursor:pointer;
+}
+
 #menu .logo img {
   width: 20rem;
+  transition: .3;
+}
+
+#menu .menu {
+  transition: .3s;
 }
 
 #menu .menu .items {
@@ -103,11 +112,34 @@
 #menu .menu .items .item {
   padding:1.8rem 3rem 0 0;
   cursor: pointer;
-  transition: 0.3s;
+  transition: .3s;
 }
 
 #menu .menu .items .item:hover, #menu .menu .items .item.active {
   color:#36D900;
+}
+
+#menu.menu-fixed {
+  position: fixed;
+  top:0;
+  background: rgba(25, 25, 25, .91);
+  width: 100%;
+  transition: .3s;
+  z-index: 100;
+}
+
+#menu.menu-fixed .logo img {
+  width: 15rem;
+  transition: .3;
+}
+
+#menu.menu-fixed .container {
+  padding-top: 1rem;
+  height: 4.7rem;
+}
+
+#menu.menu-fixed .items .item {
+  padding: 1rem 3rem 0 0;
 }
 
 #footer {
@@ -319,6 +351,7 @@
   display: flex;
   height: 30rem;
   margin-top: .7rem;
+  width: 100%;
 }
 
 #entregas .tipo {
@@ -331,10 +364,6 @@
   font-size: 2rem;
 }
 
-#entregas .respiro {
-  width: 1.5%;
-}
-
 #entregas .para-voce {
   background: url(/assets/img/logo.png) bottom 1rem right 1.5rem no-repeat, url(/assets/img/para-voce.jpg) top center;
   background-size: 10rem, 100%;
@@ -343,6 +372,7 @@
 #entregas .para-empresas {
   background: url(/assets/img/logo.png) bottom 1rem right 1.5rem no-repeat, url(/assets/img/para-empresas.jpg) top center;
   background-size: 10rem, 100%;
+  margin: 0 auto;
 }
 
 #entregas .simples {
