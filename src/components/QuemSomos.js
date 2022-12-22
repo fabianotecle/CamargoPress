@@ -9,9 +9,13 @@ function QuemSomos() {
           <div className="titulo">Quem Somos</div>
           <div className="enfeite"><img src="/assets/img/linha.png" alt="Quem Somos" title="Quem Somos" /></div>
           <div className="texto">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet diam mollis, feugiat neque at, consectetur tellus. Etiam in libero velit. Vestibulum cursus volutpat vehicula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque tempus sit amet mauris et lobortis. Donec consectetur est sapien, nec vulputate justo interdum vel. Quisque tempor posuere urna, sed commodo purus tempor nec. Etiam mattis mattis sapien vitae blandit. Quisque et lacus fermentum, facilisis eros eget, interdum velit. Vestibulum ut nisi ultricies, aliquet libero sit amet, sollicitudin diam.
+            <p>A CamargoPress é uma empresa com mais de 7 anos de trajetória, tradição e excelência no setor de transportes, e ainda por cima, com os clientes mais satisfeitos da região sul do Brasil.</p>
+
+            <p>O serviço Encomendas Expressas assina o nosso nome, traduzindo a agilidade com que pensamos e trabalhamos diariamente, atendendo as necessidades em Porto Alegre, grande Porto Alegre, Litoral Rio Grandense e Sul do Litoral Catarinense com alto padrão de qualidade no serviço prestado.</p>
+
+            <p>CamargoPress - Piscou, está ENTREGUE!</p>
           </div>
-          <div className="pode-confiar">Sua entrega estará em ótimas mãos!</div>
+          <div className="pode-confiar">Sua entrega em ótimas mãos!</div>
         </div>
         <div className="cliente-feliz"><img src="/assets/img/cliente-feliz.jpg" alt="Cliente Feliz" title="Cliente Feliz" /></div>
         <div className="entregador"><img src="/assets/img/entregador1.jpg" alt="Entregador Gentil" title="Entregador Gentil" /></div>
