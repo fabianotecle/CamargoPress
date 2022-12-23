@@ -1,4 +1,5 @@
 import React from 'react';
+import { goWhats } from "./Globais";
 
 function Locais() {
   return (
@@ -17,7 +18,7 @@ function Locais() {
                 <div className="litoral-sul-catarinense">Litoral Sul Catarinense</div>
               </div>
               <div className="button">
-                <button type="button">quero uma entrega!</button>
+                <button type="button" onClick={() => goWhats()}>quero uma entrega!</button>
               </div>
             </div>
           </div>

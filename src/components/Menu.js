@@ -1,4 +1,5 @@
 import React from 'react';
+import { goWhats } from "./Globais";
 
 function Menu() {
   function setMenuActive(menu) {
@@ -63,7 +64,7 @@ function Menu() {
               <div className="item quem-somos" onClick={() => scrollTo('quem-somos', 35)}>Quem Somos</div>
               <div className="item locais" onClick={() => scrollTo('locais', 30)}>Locais</div>
               <div className="item entregas" onClick={() => scrollTo('entregas', 10)}>Entregas</div>
-              <div className="item contato" onClick={() => scrollTo('footer', 0)}>Contato</div>
+              <div className="item contato" onClick={() => goWhats()}>Contato</div>
             </div>
           </div>
         </div>

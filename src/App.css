@@ -393,6 +393,7 @@
 #entregas .tipo {
   width: 30%;
   background: #000;
+  cursor:pointer;
 }
 
 #entregas .tipo div {
@@ -451,6 +452,7 @@
   right: 3rem;
   margin-top: -3rem;
   z-index: 2;
+  cursor:pointer;
 }
 
 #pronto-comecar .carro {

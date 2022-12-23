@@ -1,5 +1,6 @@
 import React from 'react';
 import Menu from "./Menu";
+import { goWhats } from "./Globais";
 
 function Header() {
   let activeBanner = 1;
@@ -71,7 +72,7 @@ function Header() {
           <div id="c4" className="c-banner" onClick={() => changeBanner(4)}>4</div>
         </div>
         <div className="button">
-          <button type="button">quero uma entrega!</button>
+          <button type="button" onClick={() => goWhats()}>quero uma entrega!</button>
         </div>
       </div>
     </section>
