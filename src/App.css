@@ -403,24 +403,43 @@
 
 #entregas .para-voce {
   background: url(/assets/img/logo.png) bottom 1rem right 1.5rem no-repeat, url(/assets/img/para-voce.jpg) top center;
-  background-size: 10rem, 100%;
+  background-size: 10rem auto, cover;
+  transition:.3s ease;
+}
+
+#entregas .para-voce:hover {
+  background: url(/assets/img/logo.png) bottom 1rem right 1.5rem no-repeat, url(/assets/img/para-voce.jpg) top -1.2rem center;
+  background-size: 10rem auto, cover;
 }
 
 #entregas .para-empresas {
   background: url(/assets/img/logo.png) bottom 1rem right 1.5rem no-repeat, url(/assets/img/para-empresas.jpg) top center;
-  background-size: 10rem, 100%;
+  background-size: 10rem auto, cover;
   margin: 0 auto;
+  transition:.3s ease-in-out;
+}
+
+#entregas .para-empresas:hover {
+  background: url(/assets/img/logo.png) bottom 1rem right 1.5rem no-repeat, url(/assets/img/para-empresas.jpg) top -1.2rem center;
+  background-size: 10rem auto, cover;
 }
 
 #entregas .simples {
   background: url(/assets/img/logo.png) bottom 1rem right 1.5rem no-repeat, url(/assets/img/simples.jpg) top center;
-  background-size: 10rem, 100%;
+  background-size: 10rem auto, cover;
+  transition:.3s ease-in-out;
+}
+
+#entregas .simples:hover {
+  background: url(/assets/img/logo.png) bottom 1rem right 1.5rem no-repeat, url(/assets/img/simples.jpg) top -1.2rem center;
+  background-size: 10rem auto, cover;
 }
 
 #pronto-comecar {
   background: url(/assets/img/fundo-blur.jpg) center center no-repeat;
   height: 30rem;
   overflow: hidden;
+  transition:3s;
 }
 
 #pronto-comecar .pronto-comecar {

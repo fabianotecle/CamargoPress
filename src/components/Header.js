@@ -71,7 +71,7 @@ function Header() {
           <div id="c3" className="c-banner" onClick={() => changeBanner(3)}>3</div>
           <div id="c4" className="c-banner" onClick={() => changeBanner(4)}>4</div>
         </div>
-        <div className="button">
+        <div className="button" data-aos="zoom-out-up">
           <button type="button" onClick={() => goWhats()}>quero uma entrega!</button>
         </div>
       </div>

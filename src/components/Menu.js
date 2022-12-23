@@ -1,7 +1,11 @@
 import React from 'react';
 import { goWhats } from "./Globais";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function Menu() {
+  AOS.init();
+
   function setMenuActive(menu) {
     document.querySelectorAll('.item').forEach((item) => {
       item.classList.remove('active');
@@ -56,7 +60,7 @@ function Menu() {
 
   return (
     <section id="menu">
-        <div className="container">
+        <div className="container" data-aos="zoom-out">
           <div className="logo" onClick={() => scrollTo('header', 70)}><img src="/assets/img/logo.png" alt="CamargoPress Transportadora" title="CamargoPress Transportadora" /></div>
           <div className="menu">
             <div className="items">
