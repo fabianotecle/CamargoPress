@@ -2,6 +2,7 @@ import React from 'react';
 import { goWhats } from "./Globais";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { FaBars } from "react-icons/fa";
 
 function Menu() {
   AOS.init();
@@ -16,9 +17,11 @@ function Menu() {
   window.addEventListener("scroll", (event) => {
     const scrollY = window.pageYOffset;
 
-    if(scrollY>100) {
+    if(scrollY>7) {
+      document.getElementById('header').classList.add('com-menu-fixed');
       document.getElementById('menu').classList.add('menu-fixed');
     } else {
+      document.getElementById('header').classList.remove('com-menu-fixed');
       document.getElementById('menu').classList.remove('menu-fixed');
       setMenuActive('.item.home');
     }
@@ -70,6 +73,7 @@ function Menu() {
               <div className="item entregas" onClick={() => scrollTo('entregas', 10)}>Entregas</div>
               <div className="item contato" onClick={() => goWhats()}>Contato</div>
             </div>
+            <div className="sanduiche"><FaBars /></div>
           </div>
         </div>
     </section>

@@ -23,8 +23,8 @@ function Locais() {
                 <div className="litoral-rio-grandense" data-aos="fade-right">Litoral Rio Grandense</div>
                 <div className="litoral-sul-catarinense" data-aos="fade-right">Litoral Sul Catarinense</div>
               </div>
-              <div className="button" data-aos="zoom-out-up">
-                <button type="button" onClick={() => goWhats()}>quero uma entrega!</button>
+              <div className="button">
+                <button type="button" onClick={() => goWhats()} data-aos="zoom-out-up">quero uma entrega!</button>
               </div>
             </div>
           </div>

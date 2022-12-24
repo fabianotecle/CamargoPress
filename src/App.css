@@ -27,6 +27,22 @@
   background: url("/assets/img/fundo.jpg") top center no-repeat;
 }
 
+#header.com-menu-fixed {
+  height: 36rem;
+}
+
+#header .sanduiche {
+  display: none;
+  padding-top:1.25rem;
+  font-size: 2.5rem;
+  cursor:pointer;
+  transition: .3s;
+}
+
+#header .sanduiche:hover {
+  color:#36D900;
+}
+
 #header .banner {
   margin-top: 3.4rem;
   height: 20rem;
@@ -308,6 +324,10 @@
   width: 25%;
 }
 
+#quem-somos .entregador-mobile {
+  display: none;
+}
+
 #quem-somos .cliente-feliz img {
   max-width: 90%;
   margin-top: 4rem;
@@ -481,4 +501,194 @@
   left: 25rem;
   filter:blur(.034rem);
   z-index: 1;
+}
+
+@media only screen and (max-width: 1240px) {
+  #header .banner {
+    zoom:.9;
+  }
+
+  #header.com-menu-fixed {
+    height: 34rem;
+  }
+
+  #pronto-comecar img {
+    zoom:.7;
+  }
+
+  #pronto-comecar .carro {
+    left: 18rem;
+  }
+}
+
+@media only screen and (max-width: 1110px) {
+  #header .banner {
+    zoom:.75;
+  }
+
+  #header {
+    height: 40rem;
+  }
+
+  #header.com-menu-fixed {
+    height: 30rem;
+  }
+
+  #menu .menu .items .item {
+    padding: 1.8rem 2rem 0 0;
+  }
+
+  #pronto-comecar .carro {
+    left: 16rem;
+    width: 43rem;
+  }
+
+  #locais .locais div {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #header.com-menu-fixed {
+    height: 40rem;
+  }
+
+  #menu .items {
+    display: none !important;
+  }
+  
+  #header .sanduiche {
+    display: block;
+  }
+
+  #entregas .tipo div {
+    font-size: 1.6rem;
+  }
+
+  #menu.menu-fixed {
+    position: relative;
+    height: 6.25em;
+    background:none;
+  }
+
+  #menu.menu-fixed .logo img {
+    width: 20rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #header .banner {
+    zoom:.66;
+  }
+
+  #locais .container {
+    height: 44rem;
+  }
+
+  #entregas .entregas {
+    height: 19rem;
+  }
+
+  #pronto-comecar .carro {
+    left: 21rem;
+    width: 25rem;
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  #header .banner {
+    zoom:.52;
+  }
+
+  #header {
+    height: 33rem;
+  }
+
+  #menu.menu-fixed {
+    position: relative;
+    height: 6.25em;
+    background:none;
+  }
+
+  #header.com-menu-fixed {
+    height: 31rem;
+  }
+
+  #quem-somos .entregador {
+    display: none;
+  }
+
+  #quem-somos .entregador-mobile {
+    display: block;
+    margin: 1rem auto;
+  }
+
+  #quem-somos .content {
+    width: 60%;
+  }
+
+  #quem-somos .cliente-feliz, #quem-somos .entregador {
+    width: 30%;
+  }
+
+  #locais .locais {
+    margin-top: 2rem;
+  }
+
+  #locais .locais div.porto-alegre, #locais .locais div.grande-porto-alegre, #locais .locais div.litoral-rio-grandense, #locais .locais div.litoral-sul-catarinense {
+    margin-left:0;
+  }
+
+  #locais .rosa-dos-ventos {
+    background: url(/assets/img/rosa-dos-ventos.webp) top 16rem left 22rem no-repeat;
+    background-size: 18rem;
+  }
+
+  #pronto-comecar {
+    zoom: 0.7;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  #header, #header.com-menu-fixed {
+    height: 45rem;
+  }
+  #menu .logo img {
+    width: 16rem;
+  }
+
+  #header .sanduiche {
+    padding-top: 0;
+  }
+
+  #header .banner {
+    margin-top: 1rem;
+    height: auto;
+    display: block;
+    zoom: .75;
+  }
+
+  #locais .container {
+    height: 34rem;
+  }
+
+  #entregas .entregas {
+    display: block;
+    height: auto;
+  }
+
+  #entregas .tipo {
+    width: 25rem;
+    height: 30rem;
+    margin: 0 auto 3rem;
+  }
+
+  #quem-somos .container, #entregas .container {
+    padding: 5rem 0;
+  }
+
+  #header .banner .texto {
+    height: 15rem;
+  }
 }
