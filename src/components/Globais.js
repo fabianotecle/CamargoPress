@@ -1,7 +1,5 @@
-import React from 'react';
-
 export function goWhats(msg) {
-    if(msg==null || msg=='') {
+    if(msg===null || msg==='' || msg===undefined) {
         msg = '?text=Olá CamargoPress, gostaria de cotar uma entrega!';
     } else {
         msg = '?text=' + msg;

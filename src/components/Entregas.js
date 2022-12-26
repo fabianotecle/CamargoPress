@@ -13,7 +13,7 @@ function Entregas() {
           <div data-aos="fade-up">
             <div className="subtitulo">CamargoPress</div>
             <div className="titulo">Entregas</div>
-            <div className="enfeite"><img src="/assets/img/linha.png" alt="Quem Somos" title="Quem Somos" /></div>
+            <div className="enfeite"><img src="assets/img/linha.png" alt="Quem Somos" title="Quem Somos" /></div>
           </div>
           <div className="entregas dark-side">
             <div className="tipo para-voce" data-aos="fade-up" onClick={() => goWhats('Olá CamargoPress, gostaria de cotar uma entrega para pessoa física!')}>

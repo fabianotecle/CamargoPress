@@ -1,4 +1,11 @@
-@import url(//db.onlinewebfonts.com/c/1ffbed7089a941aa728bb970f3ad49f6?family=Futura+Md+BT);
+@font-face {font-family: "Futura Md BT";
+  src: url("https://db.onlinewebfonts.com/t/1ffbed7089a941aa728bb970f3ad49f6.eot"); /* IE9*/
+  src: url("https://db.onlinewebfonts.com/t/1ffbed7089a941aa728bb970f3ad49f6.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("https://db.onlinewebfonts.com/t/1ffbed7089a941aa728bb970f3ad49f6.woff2") format("woff2"), /* chrome firefox */
+  url("https://db.onlinewebfonts.com/t/1ffbed7089a941aa728bb970f3ad49f6.woff") format("woff"), /* chrome firefox */
+  url("https://db.onlinewebfonts.com/t/1ffbed7089a941aa728bb970f3ad49f6.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+  url("https://db.onlinewebfonts.com/t/1ffbed7089a941aa728bb970f3ad49f6.svg#Futura Md BT") format("svg"); /* iOS 4.1- */
+}
 
 body {
   margin: 0;

@@ -31,7 +31,7 @@ function Header() {
     });
 
     const carro = document.querySelector('.carro');
-    carro.innerHTML = '<img src="/assets/img/doblo.webp" className="doblo" alt="" title="" />';
+    carro.innerHTML = '<img src="assets/img/doblo.webp" className="doblo" alt="" title="" />';
 
     document.querySelectorAll('.c-banner').forEach(element => {
       element.classList.remove('active');

@@ -15,7 +15,7 @@ function Locais() {
               <div data-aos="fade-up">
                 <div className="subtitulo">CamargoPress</div>
                 <div className="titulo">Locais de Atendimento</div>
-                <div className="enfeite"><img src="/assets/img/linha.png" alt="Locais de Atendimento" title="Locais de Atendimento" /></div>
+                <div className="enfeite"><img src="assets/img/linha.png" alt="Locais de Atendimento" title="Locais de Atendimento" /></div>
               </div>
               <div className="locais">
                 <div className="porto-alegre" data-aos="fade-right">Porto Alegre</div>

@@ -64,7 +64,7 @@ function Menu() {
   return (
     <section id="menu">
         <div className="container" data-aos="zoom-out">
-          <div className="logo" onClick={() => scrollTo('header', 70)}><img src="/assets/img/logo.png" alt="CamargoPress Transportadora" title="CamargoPress Transportadora" /></div>
+          <div className="logo" onClick={() => scrollTo('header', 70)}><img src="assets/img/logo.png" alt="CamargoPress Transportadora" title="CamargoPress Transportadora" /></div>
           <div className="menu">
             <div className="items">
               <div className="item home active" onClick={() => scrollTo('header', 70)}>Home</div>

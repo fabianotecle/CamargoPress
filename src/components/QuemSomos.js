@@ -12,7 +12,7 @@ function QuemSomos() {
           <div data-aos="fade-up">
             <div className="subtitulo">CamargoPress</div>
             <div className="titulo">Quem Somos</div>
-            <div className="enfeite"><img src="/assets/img/linha.png" alt="Quem Somos" title="Quem Somos" /></div>
+            <div className="enfeite"><img src="assets/img/linha.png" alt="Quem Somos" title="Quem Somos" /></div>
           </div>
           <div className="texto">
             <p data-aos="fade-up">A CamargoPress é uma empresa com mais de 7 anos de trajetória, tradição e excelência no setor de transportes, e ainda por cima, com os clientes mais satisfeitos da região sul do Brasil.</p>
@@ -23,8 +23,8 @@ function QuemSomos() {
           </div>
           <div className="pode-confiar" data-aos="fade-up">Sua entrega em ótimas mãos!</div>
         </div>
-        <div className="cliente-feliz"><img src="/assets/img/cliente-feliz.jpg" alt="Cliente Feliz" title="Cliente Feliz" data-aos="fade-right" /> <img src="/assets/img/entregador1.jpg" alt="Entregador Gentil" title="Entregador Gentil" data-aos="fade-right" className="entregador-mobile" /></div>
-        <div className="entregador"><img src="/assets/img/entregador1.jpg" alt="Entregador Gentil" title="Entregador Gentil" data-aos="fade-right" /></div>
+        <div className="cliente-feliz"><img src="assets/img/cliente-feliz.jpg" alt="Cliente Feliz" title="Cliente Feliz" data-aos="fade-right" /> <img src="/assets/img/entregador1.jpg" alt="Entregador Gentil" title="Entregador Gentil" data-aos="fade-right" className="entregador-mobile" /></div>
+        <div className="entregador"><img src="assets/img/entregador1.jpg" alt="Entregador Gentil" title="Entregador Gentil" data-aos="fade-right" /></div>
       </div>
     </section>
   );
