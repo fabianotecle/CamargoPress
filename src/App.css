@@ -503,6 +503,10 @@
   z-index: 1;
 }
 
+#pronto-comecar .container-mobile {
+  display:none;
+}
+
 @media only screen and (max-width: 1240px) {
   #header .banner {
     zoom:.9;
@@ -636,6 +640,10 @@
     margin-top: 2rem;
   }
 
+  #locais .container {
+      height: 32rem;
+  }
+
   #locais .locais div.porto-alegre, #locais .locais div.grande-porto-alegre, #locais .locais div.litoral-rio-grandense, #locais .locais div.litoral-sul-catarinense {
     margin-left:0;
   }
@@ -648,9 +656,26 @@
   #pronto-comecar {
     zoom: 0.7;
   }
+
+  #pronto-comecar .container {
+    display:none;
+  }
+
+  #pronto-comecar .container-mobile {
+    display:block !important;
+  }
+
+  #pronto-comecar .carro {
+    left: 21rem;
+    width: 41rem;
+  }
 }
 
 @media only screen and (max-width: 650px) {
+  #header {
+    zoom: .9;
+  }
+
   #header, #header.com-menu-fixed {
     height: 45rem;
   }
@@ -666,7 +691,11 @@
     margin-top: 1rem;
     height: auto;
     display: block;
-    zoom: .75;
+    zoom: .61;
+  }
+
+  .titulo {
+    font-size: 2.3rem;
   }
 
   #locais .container {
@@ -682,6 +711,7 @@
     width: 25rem;
     height: 30rem;
     margin: 0 auto 3rem;
+    max-width: 95%;
   }
 
   #quem-somos .container, #entregas .container {
@@ -690,5 +720,56 @@
 
   #header .banner .texto {
     height: 15rem;
+  }
+
+  #locais .rosa-dos-ventos {
+    background: url(/assets/img/rosa-dos-ventos.webp) top 10rem left 12rem no-repeat;
+    background-size: 18rem;
+  }
+
+  #locais .button button, #header .button button {
+    font-size: 2rem;
+  }
+
+  #quem-somos .content {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  #quem-somos .entregador-mobile {
+    display: none;
+  }
+
+  #quem-somos .entregador {
+    display: block;
+  }
+
+  #quem-somos .cliente-feliz, #quem-somos .entregador {
+    width: 50%;
+    margin-top: 1rem;
+  }
+
+  #whatsapp {
+    right: 2.1rem;
+  }
+
+  #footer {
+    height: 10.2rem;
+  }
+
+  #pronto-comecar .container {
+    display:none;
+  }
+
+  #pronto-comecar .container-mobile {
+    display:block !important;
+  }
+
+  #pronto-comecar .container-mobile .entregador {
+    display:none;
+  }
+
+  #pronto-comecar .container-mobile .carro {
+    display:none;
   }
 }
